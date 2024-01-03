@@ -1,0 +1,114 @@
+/*全体*/
+body{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-family: "Noto Sans japanese",sans-serif;
+    background-color: #ffffff;
+
+/*ナビゲーション*/
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px;
+}
+
+#navi{
+    font-weight: bold;
+    font-size: 34px;
+    color: black;
+    background-color: #ffffff;
+    margin: 10px 150px 10px 150px;
+    padding: 5px 5px;
+    border: 1px solid black;
+}
+
+#menu{
+    margin: 10px 150px 10px 150px;
+    padding: 5px 5px;
+}
+
+nav a{
+    font-weight: bold;
+    font-size: 34px;
+    color: black;
+    text-decoration: none;
+    text-decoration-line: none;
+    margin: 10px 10px;
+    padding: 5px 5px;
+}
+
+/*カメラの写真*/
+#mainpic{
+    /*autoは左右の余白含め100%、100%は左右の余白含めず100%*/
+    width: 100%;
+}
+
+/*About*/
+h2{
+    font-weight: bold;
+    font-size: 34px;
+    color: black;
+    margin:60px 10px 20px 10px;
+    text-align: center;
+}
+
+#about{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+
+#Kazuki_photo{
+    border-radius: 50%;
+    width:280px;
+    height: 280px;
+    object-fit: cover;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    margin-left: 20px;
+}
+
+ul{
+    font-size: 18px;
+}
+
+/*Works*/
+#works{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+#works div{
+    padding: 8px 25px;
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+p{
+    font-size: 18px;
+    overflow-wrap: normal;
+}
+
+footer p{
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/*スマホレスポンシブル*/
+@media (max-width: 767px){
+    #works div{
+       text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+}
+}      
