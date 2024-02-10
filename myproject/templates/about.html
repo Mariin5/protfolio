@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_head %}
+{% endblock %}
+
+{% block main %}
+<div class="masthead bg-primary">
+    <div class="d-flex align-items-center flex-column">
+        <img class="masthead-avatar" src="{% static 'assets/img/profphoto.png' %}"  alt="myphoto" />
+    </div>
+    <div class="about_name">
+        <h2>MARINA INOUE</h2>
+    </div>
+</div>
+<div>
+    <p class="lead">
+        1993年1月生まれ。甲子園球場や西宮神社がある、兵庫県西宮市出身。<br>
+        大学2年生の時に、青春18切符を使って1人広島旅行に行ったことから、旅行が好きになる。<br>
+        社会人1年目のボーナスで、今の愛機NikonD3400を購入。<br>
+        旅行に加え、旅先での写真撮影が趣味になる。自然や町並み、建築物の撮影がメイン。
+    </p>
+</div>
+
+<div class="back_top" style="text-align: center;"><a href="{% url 'home' %}">トップページに戻る</a></div>
+
+
+
+
+
+{% endblock %}

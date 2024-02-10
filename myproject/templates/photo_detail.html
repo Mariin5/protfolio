@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block extra_head %}
+{% endblock %}
+
+    {% block main %}
+
+    <div class="photo_detail">
+        <div class="photo_detail_container">
+            <img class="img-fluid" src="{{ photo.image.url }}" alt="{{photo.name}}" >
+            <h2 class="photo_name">{{photo.name}}</h2>
+            <p style="text-align:center"class="mb-4">
+                カテゴリ：{% for category in photo.category.all %}{{ category.category }}{% endfor %}<br>
+                エリア：{% for area in photo.area.all %}{{ area.area }}{% endfor %}<br>
+                {{ photo.date }} 撮影<br> 
+                {{ photo.detail }}</p>
+        </div>
+    </div>
+
+    <div id="back_top"><a href="{% url 'home' %}">トップページに戻る</a></div>
+
+
+
+    {% endblock %}
